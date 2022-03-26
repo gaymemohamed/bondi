@@ -11,7 +11,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
@@ -26,6 +26,7 @@ body {
   --green-color:#33d1cc;
   --yellow-color:#ffc400;
   --red-color:#ff3150;
+  --section-color:#eff7fa;
 }
 
 .btn-main {
@@ -42,6 +43,34 @@ body {
   min-height: calc(100vh - 6rem);
 }
 
+.main-title::after {
+  content: "";
+  width: 12rem;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feat__icon-holder {
+  height: 15rem;
+}
+.feat__icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feat__number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.feat__icon {
+  color: var(--green-color);
+}
+.feat__heading {
+  color: var(--yellow-color);
+}
 .navbar {
   background-color: var(--dark-color);
 }

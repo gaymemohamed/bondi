@@ -1,0 +1,11 @@
+.main-title::after{
+    content: "";
+    width: 12rem;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}

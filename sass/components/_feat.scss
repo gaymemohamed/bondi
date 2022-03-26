@@ -1,0 +1,22 @@
+.feat{
+    &__icon-holder{
+        height: 15rem;
+    }
+    &__icon-holder svg{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__number{
+        font-size: 12rem;
+        color: var(--section-color);
+    }
+    &__icon{
+        color: var(--green-color);
+    }
+    &__heading{
+        color: var(--yellow-color);
+    }
+    &__paragraph{
+
+    }
+}
