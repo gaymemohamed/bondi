@@ -1,0 +1,23 @@
+.works__box{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: attr(data-work);
+        position: absolute;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #33d1cc9c;
+        color: white;
+        transition: .3s;
+        
+        transform: translateX(calc(-100% - 5px )  );
+    }
+    &:hover::before{
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////
+//LANDING
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 6rem);
+} 
+
+
+//////////////////////////////////////////////////////
+//OUR WORK 
+.works{
+    background-color: var(--section-color);
+    &__item{
+        padding: .5rem 1rem;
+        cursor: pointer;
+        &:not(.active):hover{
+            color: var(--red-color);
+        }
+    }
+    &__item.active{
+        background-color: var(--red-color);
+        color: var(--yellow-color);
+    }
+}

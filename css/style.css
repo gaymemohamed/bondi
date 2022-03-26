@@ -27,6 +27,7 @@ body {
   --yellow-color:#ffc400;
   --red-color:#ff3150;
   --section-color:#eff7fa;
+  --section-color:#eff7fa;
 }
 
 .btn-main {
@@ -38,14 +39,9 @@ body {
   color: #fff;
 }
 
-.landing {
-  background-color: var(--dark-color);
-  min-height: calc(100vh - 6rem);
-}
-
 .main-title::after {
   content: "";
-  width: 12rem;
+  width: 8rem;
   height: 2px;
   background-color: var(--green-color);
   position: absolute;
@@ -71,6 +67,29 @@ body {
 .feat__heading {
   color: var(--yellow-color);
 }
+.works__box {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.works__box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33d1cc9c;
+  color: white;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.works__box:hover::before {
+  transform: translateX(0);
+}
+
 .navbar {
   background-color: var(--dark-color);
 }
@@ -98,6 +117,26 @@ body {
 }
 .search svg {
   color: var(--green-color);
+}
+
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 6rem);
+}
+
+.works {
+  background-color: var(--section-color);
+}
+.works__item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.works__item:not(.active):hover {
+  color: var(--red-color);
+}
+.works__item.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
 }
 
 /*# sourceMappingURL=style.css.map */
