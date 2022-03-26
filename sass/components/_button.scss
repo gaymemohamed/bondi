@@ -1,0 +1,9 @@
+
+.btn-main{
+    background-color:var(--red-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+    &:hover{
+        color: #fff;
+    }
+}
