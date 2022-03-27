@@ -21,6 +21,14 @@ body {
   height: 1000rem;
 }
 
+.color-yellow {
+  color: var(--yellow-color);
+}
+
+.bg-darken {
+  background-color: var(--dark-color);
+}
+
 :root {
   --dark-color:#19283f;
   --green-color:#33d1cc;
@@ -90,6 +98,10 @@ body {
   transform: translateX(0);
 }
 
+.box__heading {
+  background-color: var(--green-color);
+}
+
 .navbar {
   background-color: var(--dark-color);
 }
@@ -121,7 +133,7 @@ body {
 
 .landing {
   background-color: var(--dark-color);
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 4.59rem);
 }
 
 .works {
@@ -137,6 +149,18 @@ body {
 .works__item.active {
   background-color: var(--red-color);
   color: var(--yellow-color);
+}
+
+.about__description {
+  max-width: 60%;
+}
+.about__photo {
+  position: relative;
+  top: 1.2rem;
+}
+
+.team {
+  background-color: var(--section-color);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 //LANDING
 .landing{
     background-color: var(--dark-color);
-    min-height: calc(100vh - 6rem);
+    min-height: calc(100vh - 4.59rem);
 } 
 
 
@@ -22,3 +22,23 @@
         color: var(--yellow-color);
     }
 }
+
+//////////////////////////////////////////////////////
+//ABOUT
+.about{
+    &__description{
+        max-width: 60%;
+    }
+    &__photo{
+        position: relative;
+        top: 1.2rem;
+    }
+} 
+
+
+////////////////////////////////////////////////////////
+//TEAM
+.team{
+    background-color: var(--section-color);
+    
+} 
