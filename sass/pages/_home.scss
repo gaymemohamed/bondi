@@ -42,3 +42,59 @@
     background-color: var(--section-color);
     
 } 
+
+
+//////////////////////////////////////////////////////////
+.subscribe{
+    background-color: var(--yellow-color);
+    &__email{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: #fff;
+        }
+
+    }
+    &__button{
+        background-color: var(--dark-color);
+        color: var(--yellow-color);
+    }
+} 
+
+///////////////////////////////////////
+//FOOTER
+.footer{
+    background-color: var(--dark-color);
+    ul{
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+        svg.facebook{
+            background-color: #1877f2;
+        }
+        svg.twitter{
+            background-color: #1da1f2;
+        }
+        svg.instagram{
+            background-color: #e1306c;
+        }
+        svg.youtube{
+            background-color: #ff0000;
+        }
+
+    }
+} 
+
+.copyrights > span{
+    color: var(--green-color);
+}
+
+.copyrights div span{
+    color: var(--yellow-color);
+}
+
