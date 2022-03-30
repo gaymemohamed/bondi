@@ -155,7 +155,12 @@ body {
 }
 .about__photo {
   position: relative;
-  top: 1.2rem;
+  top: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .about__photo {
+    top: 0;
+  }
 }
 
 .team {
